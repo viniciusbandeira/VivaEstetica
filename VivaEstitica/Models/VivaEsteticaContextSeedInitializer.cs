@@ -51,24 +51,24 @@ namespace VivaEstitica.Models
             {
                 new Servico
                 {
-                    Cliente =context.Clientes.FirstOrDefault(c => c.Documento.Equals("111.111.111-11")),
-                    Profissional=context.Profissionais.FirstOrDefault(c => c.Documento.Equals("111.111.111-14")),
+                    Cliente =context.Clientes.Find(1),
+                    Profissional=context.Profissionais.Find(1),
                     Inicio=new DateTime(2018, 01, 30, 14, 00, 00),
                     TipoServico=context.TipoServicos.Find(1),
                     Estado= Estados.aguardando
                 },
                 new Servico
                 {
-                    Cliente =context.Clientes.FirstOrDefault(c => c.Documento.Equals("111.111.111-12")),
-                    Profissional=context.Profissionais.FirstOrDefault(c => c.Documento.Equals("111.111.111-15")),
+                    Cliente =context.Clientes.Find(2),
+                    Profissional=context.Profissionais.Find(2),
                     Inicio=new DateTime(2018, 01, 30, 14, 00, 00),
                     TipoServico=context.TipoServicos.Find(2),
                     Estado= Estados.aguardando
                 },
                 new Servico
                 {
-                    Cliente =context.Clientes.FirstOrDefault(c => c.Documento.Equals("111.111.111-13")),
-                    Profissional=context.Profissionais.FirstOrDefault(c => c.Documento.Equals("111.111.111-15")),
+                    Cliente =context.Clientes.Find(3),
+                    Profissional=context.Profissionais.Find(2),
                     Inicio=new DateTime(2018, 01, 31, 14, 00, 00),
                     TipoServico=context.TipoServicos.Find(3),
                     Estado= Estados.aguardando

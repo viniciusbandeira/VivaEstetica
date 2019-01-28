@@ -17,5 +17,7 @@ namespace VivaEstitica.Models
         public virtual DbSet<Profissional> Profissionais { get; set; }
         public virtual DbSet<Servico> Servicos { get; set; }
         public virtual DbSet<TipoServico> TipoServicos { get; set; }
+
+        public System.Data.Entity.DbSet<VivaEstitica.ViewModels.DadosLogin> DadosLogins { get; set; }
     }
 }
