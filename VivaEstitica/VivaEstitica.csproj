@@ -160,7 +160,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AbstractUsuario.cs" />
+    <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Gerenciador.cs" />
+    <Compile Include="Models\Profissional.cs" />
+    <Compile Include="Models\Servico.cs" />
+    <Compile Include="Models\TipoServico.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Hasher.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-grid.css" />
@@ -242,7 +249,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
