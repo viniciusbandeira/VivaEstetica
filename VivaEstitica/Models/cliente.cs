@@ -19,5 +19,7 @@ namespace VivaEstitica.Models
         [Required, RegularExpression("^\\(\\d{2}\\)\\d-\\d{4}-\\d{4}$")]
         public string Celular { get; set; }
         public string Endereco { get; set; }
+
+        public virtual List<Servico> Servicos { get; set; }
     }
 }

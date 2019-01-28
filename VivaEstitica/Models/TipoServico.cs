@@ -12,5 +12,8 @@ namespace VivaEstitica.Models
         public int Id { get; set; }
         public string Descricao { get; set; }
         public float valor { get; set; }
+        public int DuracaoMinutos { get; set; }
+
+        public virtual List<Servico> Servicos { get; set; }
     }
 }

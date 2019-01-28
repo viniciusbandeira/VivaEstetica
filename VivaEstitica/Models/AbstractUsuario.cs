@@ -14,7 +14,7 @@ namespace VivaEstitica.Models
         public string Documento { get; set; }
         [Required]
         public string Nome { get; set; }
-        private string Senha { get; set; }
+        protected internal string Senha { get; set; }
 
         public bool ValidaSenha(string senha)
         {
