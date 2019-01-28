@@ -9,12 +9,13 @@ namespace VivaEstitica.Models
 {
     public abstract class AbstractUsuario
     {
-        
         [Key]
-        public string Documento { get; set; }
+        public int Id { get; set; }
         [Required]
-        public string Nome { get; set; }
-        protected internal string Senha { get; set; }
+        public virtual string Documento { get; set; }
+        [Required]
+        public virtual string Nome { get; set; }
+        public string Senha { get; set; }
 
         public bool ValidaSenha(string senha)
         {
