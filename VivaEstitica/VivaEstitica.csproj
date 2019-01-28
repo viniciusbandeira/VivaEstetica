@@ -166,7 +166,14 @@
     <Compile Include="Models\Profissional.cs" />
     <Compile Include="Models\Servico.cs" />
     <Compile Include="Models\TipoServico.cs" />
+    <Compile Include="Models\VivaEsteticaContext.cs" />
+    <Compile Include="Models\VivaEsteticaContextSeedInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Utils\Hasher.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -260,6 +267,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
