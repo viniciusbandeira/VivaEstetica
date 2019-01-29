@@ -29,11 +29,11 @@ namespace VivaEstitica.Models
         [Required]
         public DateTime Inicio { get; set; }
         [Required]
-        public Cliente Cliente { get; set; }
+        public virtual Cliente Cliente { get; set; }
         [Required]
-        public Profissional Profissional { get; set; }
+        public virtual Profissional Profissional { get; set; }
         [Required]
-        public TipoServico TipoServico { get; set; }
+        public virtual TipoServico TipoServico { get; set; }
         [Required]
         public Estados? Estado { get; set; }
     }

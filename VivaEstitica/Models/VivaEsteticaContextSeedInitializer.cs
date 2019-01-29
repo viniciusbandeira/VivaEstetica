@@ -31,6 +31,8 @@ namespace VivaEstitica.Models
             {
                 new TipoServico{Descricao="Micro agulhamento", valor=(float)550.00, DuracaoMinutos=100},
                 new TipoServico{Descricao="Lipoaspiração", valor=(float)2000.00, DuracaoMinutos=400},
+                new TipoServico{Descricao="Massagem", valor=(float)80.00, DuracaoMinutos=30},
+                new TipoServico{Descricao="Massagem", valor=(float)150.00, DuracaoMinutos=60},
                 new TipoServico{Descricao="Pilling", valor=(float)100.00, DuracaoMinutos=50}
             };
 
@@ -74,6 +76,8 @@ namespace VivaEstitica.Models
                     Estado= Estados.aguardando
                 }
             };
+            Servicos.ForEach(s => context.Servicos.Add(s));
+            context.SaveChanges();
 
             
         }

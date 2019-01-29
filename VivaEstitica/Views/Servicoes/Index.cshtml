@@ -1,0 +1,62 @@
+﻿@model IEnumerable<VivaEstitica.Models.Servico>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Agenda</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Inicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>
+            Duração(minutos)
+        </th>
+        <th>
+            Valor
+        </th>
+        <th>
+            Profissional
+        </th>
+        <th>
+            Tipo do serviço
+        </th>
+        <th>
+
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Inicio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @item.TipoServico.DuracaoMinutos
+        </td>
+        <td>
+            @item.TipoServico.valor
+        </td>
+        <td>
+            @item.Profissional.Nome
+        </td>
+        <td>
+            @item.TipoServico.Descricao
+        </td>
+        <td>
+            @Html.ActionLink("Remarcar", "Edit", new { id = item.Id }) |
+            @Html.ActionLink("Cancelar", "Delete", new { id = item.Id })
+        </td>
+    </tr>
+}
+
+</table>
